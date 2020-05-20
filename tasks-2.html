@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tasks 2 | Site Title</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+   <!-- Start Header  -->
+   <header class="header">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12">
+               <nav class="navbar navbar-expand-xl navbar-light">
+                  <a class="navbar-brand mr-5" href="index.html">Site Name</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./tasks-1.html">Complete tasks</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="./tasks-2.html">Tasks 2</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./tasks-3.html">Tasks 3</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./payments-1.html">Payments 1</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="./payments-2.html">Payments 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="./payments-3.html">Payments 3</a>
+                        </li>
+                     </ul>
+                     <!-- Sign in area  -->
+                     <div class="d-flex">
+                        <p class="mb-0 mr-2">Sign in as <span>test-1</span>. </p>
+                        <button type="button">Log out.</button>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="pt-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="d-flex flex-wrap justify-content-between mb-3">
+                  <h5>Set Amazon location</h5>
+                  <p>$0.00 for completion</p>
+               </div>
+               <ol class="ml-3">
+                  <li>Go to Amazon.es </li>
+                  <li>Click on the button that begins with ‘Enviar a’ in the top-left of the page</li>
+                  <li>In the text box enter ‘08016’ and click ‘Confirmar’.</li>
+                  <li>The button text should change to ‘Enviar a Barcelona 08016’.</li>
+                  <li>You can now mark this task as completed. Thank you.</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <form class="form">
+                  <div class="d-flex flex-wrap">
+                     <button type="button">Submit</button>
+                     <a href="#" data-toggle="modal" data-target="#can’t-complete" class="d-block ml-3">Can’t
+                        complete task</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Modal -->
+   <div class="modal fade confirm-payment" id="can’t-complete" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Can’t complete task</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form class="form">
+                  <p>Tell us why this task cannot be completed. For example, if the product cannot be found. Give the
+                     steps you went through to attempt to complete this task.</p>
+                  <textarea class="w-100 p-2 my-2" rows="3">
+
+                     </textarea>
+                  <p>You will still be paid for this task, as long as your reason is valid.</p>
+                  <button class="submit">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+// Call Abstracts
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+// Call Base
+
+@import './base/reset';
+@import './base/typography';
+
+// Call Components
+
+@import './components/buttons';
+@import './components/question-box';
+@import './components/slider';
+
+
+// Call Layout
+
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/navigations';
+@import './layout/header';
+
+
+// Call Pages
+
+@import './pages/home'; 
+
+// Call All CSS
+@import './components/all';

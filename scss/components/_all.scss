@@ -1,0 +1,268 @@
+.header {
+   background-color: #E7E6E6;
+   padding: 7px 0;
+
+   p {
+      span {
+         font-weight: 600;
+      }
+   }
+
+   .navbar {
+      @include mobile-screen {
+         padding: 0;
+      }
+   }
+}
+
+.main-area {
+// min-height: 100vh;
+
+   h3 {
+      font-weight: 400;
+      font-size: 32px;
+
+      @include tab-screen {
+         font-size: 26px;
+      }
+   }
+
+   h4 {
+      font-weight: 400;
+      font-size: 25px;
+
+      @include tab-screen {
+         font-size: 23px;
+      }
+   }
+
+   .tasks {
+      background-color: #D8D8D8;
+      border: 1px solid #979797;
+      padding: 10px 20px;
+      margin: 30px 0;
+   }
+
+   .more {
+      text-decoration: underline;
+   }
+}
+
+.transactions.table {
+
+   &.table-bordered {
+      border: 2px solid #dee2e6;
+      border-bottom: 1px solid #dee2e6;
+   }
+   th {
+      font-size: 24px;
+      font-weight: 500;
+      border-bottom: 2px solid #979797;
+
+      @include tab-screen {
+         font-size: 22px;
+      }
+      @include mobile-screen {
+         font-size: 18px;
+      }
+   }
+
+   td,
+   th {
+      border: 2px solid #979797;
+      padding: 8px;
+   }
+
+   td:last-child {
+      text-align: right;
+    }
+}
+
+.paypel {
+   display: flex;
+   background-color: #D8D8D8;
+   border: 1px solid #979797;
+   padding: 5px 15px;
+   margin: 10px 0 30px;
+
+   img {
+      width: 40px;
+      object-fit: cover;
+      display: block;
+      margin-right: 15px;
+   }
+}
+
+.desable-paypal {
+   opacity: 0.7;
+   margin-bottom: 5px;
+}
+
+.success-header {
+   background-color: #64C6358C;
+   border: 1px solid #2C2C2C;
+   padding: 10px;
+
+   h4 {
+      font-weight: 400;
+   }
+}
+.pending-payout {
+   border: 3px solid #979797;
+   padding: 15px;
+   margin-bottom: 30px;
+
+   ul {
+      li {
+         position: relative;
+         padding-left: 20px;
+         margin-bottom: 8px;
+
+         &::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+         }
+      }
+   }
+   ul,
+   p {
+      margin-bottom: 0;
+   }
+}
+
+.confirm-payment {
+   
+   .modal-content {
+      border: 1px solid #979797;
+      border-radius: 0;
+   }
+
+   .modal-header {
+      border-bottom: 0;
+      padding: 15px 30px 0 30px;
+      align-items: center;
+
+      @include tab-screen {
+         padding: 15px 20px 0 20px;
+      }
+
+      h5 {
+         font-weight: 400;
+      }
+   }
+
+   .modal-body {
+      padding: 30px;
+
+      @include tab-screen {
+         padding: 20px;
+      }
+   }
+
+   input {
+      width: 100%;
+      padding: 3px 10px;
+      margin-bottom: 20px;
+   }
+
+   .submit {
+      background-color: #F0F0F0;
+      padding: 6px 25px;
+      border: 1px solid #979797;
+   }
+}
+
+.tasks {
+   padding-top: 50px;
+
+   li {
+      margin-bottom: 5px;
+   }
+
+   h6 {
+      font-size: 22px;
+   }
+   .product-information {
+
+   
+      a {
+         margin-top: 30px;
+         display: inline-block;
+      }
+   }
+
+   .find-product {
+      li {
+         position: relative;
+         padding-left: 20px;
+
+         &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #362a2a;
+         }
+      }
+   }
+
+
+}
+
+#can’t-complete {
+
+   .form {
+      button {
+         background-color: #F0F0F0;
+         border: 1px solid #979797;
+      }
+   }
+
+
+}
+
+.right-border {
+   border-right: 1px solid #979797;
+
+   @include tab-screen {
+      border-right: 0;
+   }
+}
+.left-border {
+   border-left: 1px solid #979797;
+}
+.number-box {
+   border: 1px solid #979797;
+   background-color: #E7E7E7;
+   border-radius: 50%;
+   padding: 15px;
+   font-size: 22px;
+   display: flex;
+   width: 60px;
+   height: 60px;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer {
+   background-color: #E7E6E6;
+   padding: 50px 0;
+   margin-top: 50px;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+
+   a,
+   button {
+      border: 1px solid #979797;
+      padding: 5px 20px;
+
+      @include mobile-screen {
+         margin-bottom: 15px;
+      }
+   }
+}

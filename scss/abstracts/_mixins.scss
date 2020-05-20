@@ -1,0 +1,23 @@
+@mixin large-screen {
+   @media (min-width: 1200px) {
+     @content;
+   }
+ }
+ 
+ @mixin medium-screen {
+   @media (max-width: 1024px) {
+     @content;
+   }
+ }
+ 
+ @mixin tab-screen {
+   @media (max-width: 768px) {
+     @content;
+   }
+ }
+ 
+ @mixin mobile-screen {
+   @media (max-width: 576px) {
+     @content;
+   }
+ }

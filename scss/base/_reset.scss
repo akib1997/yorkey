@@ -1,0 +1,56 @@
+@import '../abstracts/variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+}
+
+body {
+   background-color: $white;
+   height: 100%;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+ul li {
+   list-style: none;
+}
+
+a:hover,
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+h3, h4, h5, h6 {
+   font-weight: 400;
+}
+button {
+   background-color: transparent;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   &:focus {
+      outline: 0;
+   }
+   &:active {
+      outline: 0;
+   }
+}
+
+.modal button {
+   span {
+      font-size: 50px;
+      font-weight: 300;
+   }
+}
+
+.container {
+
+   @include large-screen {
+      max-width: 1026px;
+   }
+}
