@@ -256,6 +256,11 @@
    width: 100%;
    bottom: 0;
 
+   @include mobile-screen {
+      padding: 20px 0;
+      margin-top: 20px;
+   }
+
    a,
    button {
       border: 1px solid #979797;
