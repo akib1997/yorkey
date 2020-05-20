@@ -252,8 +252,7 @@
    background-color: #E7E6E6;
    padding: 50px 0;
    margin-top: 50px;
-   position: fixed;
-   width: 100%;
+   position: sticky;
    bottom: 0;
 
    @include mobile-screen {
