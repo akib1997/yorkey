@@ -131,7 +131,7 @@
    }
 }
 
-.confirm-payment {
+.my-modal {
    
    .modal-content {
       border: 1px solid #979797;
@@ -161,15 +161,23 @@
    }
 
    input {
-      width: 100%;
+      // width: 100%;
       padding: 3px 10px;
-      margin-bottom: 20px;
    }
 
    .submit {
       background-color: #F0F0F0;
       padding: 6px 25px;
       border: 1px solid #979797;
+   }
+}
+
+.my-modal {
+
+   .submit {
+      background-color: #F0F0F0;
+      border: 1px solid #979797;
+      padding: 6px 25px;
    }
 }
 
