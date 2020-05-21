@@ -161,7 +161,6 @@
    }
 
    input {
-      // width: 100%;
       padding: 3px 10px;
    }
 
@@ -172,7 +171,11 @@
    }
 }
 
-.my-modal {
+.login-form {
+
+   input {
+      border: 1px solid #979797;
+   }
 
    .submit {
       background-color: #F0F0F0;
@@ -233,6 +236,37 @@
 
 }
 
+.custom-check {
+   .styled-checkbox {
+      position: absolute;
+      opacity: 0;
+    }
+    .styled-checkbox + label {
+      position: relative;
+      cursor: pointer;
+    }
+    .styled-checkbox + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 1px solid #979797;
+    }
+
+    .styled-checkbox:checked + label:after {
+      content: 'X';
+      position: absolute;
+      left: 5px;
+      top: -1px;
+      color: #979797;
+    }
+    
+}
+
+
 .right-border {
    border-right: 1px solid #979797;
 
@@ -240,9 +274,11 @@
       border-right: 0;
    }
 }
+
 .left-border {
    border-left: 1px solid #979797;
 }
+
 .number-box {
    border: 1px solid #979797;
    background-color: #E7E7E7;

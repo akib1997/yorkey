@@ -57,7 +57,7 @@
                      <!-- Sign in Out area  -->
                      <div class="d-flex">
                         <p class="mb-0 mr-2">Sign in as <span>test-1</span>. </p>
-                        <a href="./login.html">Login</a>
+                        <a href="#">Login</a>
                      </div>
                   </div>
                </nav>
@@ -70,42 +70,9 @@
    <main class="main-area">
       <div class="container">
          <div class="row">
-            <div class="col-12">
-               <h3 class="mt-5 pt-5">Hello, <span>test-01</span></h3>
-               <!-- Tasks Have -->
-               <p>You have tasks to complete.</p>
-               <!-- Complete tasks Button -->
-               <button type="button" class="tasks">Complete tasks</button>
-
-               <!-- No Tasks -->
-               <!-- <p>There are no tasks complete.</p>
-               <p>We'll send you an Email when there are tasks availabole</p> -->
-
-
-               <!-- Account balance -->
-               <h6>Account balance</h6>
-
-               <!-- Amount of Balance -->
-               <p>Your account balance is <span>$16.75</span> </p>
-            </div>
-         </div>
-      </div>
-   </main>
-
-   <!-- Login Form Modal 
-      <button type="button" data-toggle="modal" data-target="#login">Log out.</button>
-   <div class="modal fade my-modal" id="login" data-backdrop="static" tabindex="-1" role="dialog"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h4 class="modal-title" id="staticBackdropLabel">Site name</h4>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
+            <div class="col-md-6 mx-auto">
+               <form class="mt-5 login-form">
+                  <h3 class="mb-4">Site Name</h3>
                   <div class="form-group">
                      <label for="uname">User Name</label>
                      <input type="text" class="w-100 px-2 py-1" id="uname" required>
@@ -114,17 +81,16 @@
                      <label for="Password1">Password</label>
                      <input type="password" class="w-100 px-2 py-1" id="Password1" required>
                   </div>
-                  <div class="form-group form-check">
-                     <input type="checkbox" class="form-check-input" id="checkbox" required>
-                     <label class="form-check-label" for="checkbox">Remember me</label>
+                  <div class="form-group custom-check">
+                     <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" required>
+                     <label for="styled-checkbox-1">Remember me</label>
                   </div>
                   <button type="submit" class="submit">Submit</button>
                </form>
             </div>
          </div>
       </div>
-   </div>
--->
+   </main>
 
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
